@@ -34,11 +34,12 @@
         {\ensuremath{\rcurvearrowse\space}}}
 \lstset{breaklines=true, breakatwhitespace=true}
 \lstset{numbers=left, numberstyle=\scriptsize}
-\usepackage{minted}
+\usepackage[outputdir=output]{minted}
 \usemintedstyle{autumn} % friendly, colorful
 \newminted{c}{mathescape, linenos, numbersep=5pt, gobble=0, frame=lines, framesep=2mm}
-\newminted{bash}{bgcolor=light-gray}
-\newminted{console}{bgcolor=light-gray}
+\definecolor{background}{gray}{0.90}
+\newminted{bash}{bgcolor=background}
+\newminted{console}{bgcolor=background}
 \usemintedstyle[console]{bw}
 \usepackage{upquote}
 
