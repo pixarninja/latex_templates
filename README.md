@@ -16,5 +16,5 @@ cp compile.sh ./template_folder/
 cd template_folder && ./compile template.tex
 ```
 
-This will create an `./out/` directory where the LaTeX output is
+This will create an `./output/` directory where the LaTeX output is
 generated.
