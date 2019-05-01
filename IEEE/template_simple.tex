@@ -1,12 +1,12 @@
 \documentclass{article}
 
-% Formatting for media
 \usepackage{float}
 \restylefloat{table}
 \restylefloat{figure}
 
 %\usepackage[margin=1in]{geometry} 
-\usepackage{amsmath,amsfonts,amssymb,amsthm,array,hyperref,cite,float,mathtools,mdframed,pgffor,color,xcolor,blindtext}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsfonts,amssymb,amsthm,array,hyperref,cite,mathtools,mdframed,pgffor,color,xcolor,blindtext}
 \usepackage{scrextend}
 \usepackage[epsilon,tstt]{backnaur}
 \usepackage{forest,tikz}
@@ -69,17 +69,18 @@
 \usepackage[vmargin=2cm,hmargin=2cm,head=16pt,includeheadfoot]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
-\fancyhead[L]{{\it Course Number: Project Title}}
-\fancyhead[R]{{\it Course Title, Year}}
+\fancyhead[L]{{\it Project Title, Year}}
+\fancyhead[R]{{\it Course Number: Course Title}}
+\raggedcolumns
 
 \title{\LARGE \bf
-TITLE\\
+Title
 }
 
 \author{
 Author\rule[25pt]{0pt}{0pt}\\
 Professor\\
-Course
+Course Number
 }
 
 \begin{document}
@@ -90,9 +91,11 @@ Course
 \date{Date}
 \bigskip
 
-\begin{multicols}{2}
+%\begin{multicols}{2}
 
-\textit{Abstract}
+\textit{\textbf{
+\hspace{10mm} Abstract...
+}}
 
 \section{Section}
 \label{ref:section_ref}
@@ -113,6 +116,6 @@ Course
 \item Gerald J. Alred, Charles T. Brusaw, Walter E. Oliu. ``Handbook of Technical Writing'', handbook.
 \end{enumerate}
 %==========================================================
-\end{multicols}
+%\end{multicols}
 \end{document}
 %==========================================================
